@@ -22,30 +22,24 @@ The model is trained on the C-NMC Leukemia dataset, containing ALL and HEM blood
 Dataset Source: Kaggle - Leukemia Classification (C-NMC) <br>
 
 Results <br>
-The model effectively classifies leukemia images, achieving a test accuracy of approximately 99.91%. <br>
+The model effectively classifies leukemia images, achieving a test accuracy of approximately 86.31%. <br>
 
-Test Loss: 0.0051 <br>
-Test Accuracy: 0.9991 <br>
+Test Loss: 0.3423 <br>
+Test Accuracy: 0.8631 <br>
 
 Classification Report: <br>
-
               precision    recall  f1-score   support
 
-           0       1.00      0.99      1.00       678
-           1       1.00      1.00      1.00      1455
+           0       0.90      0.64      0.75       678
+           1       0.85      0.97      0.91      1455
 
-    accuracy                           1.00      2133
+    accuracy                           0.86      2133
+   macro avg       0.88      0.80      0.83      2133
+weighted avg       0.87      0.86      0.86      2133
    
 Confusion Matrix: <br>
-
-True Negatives (Correctly predicted HEM): 672 
-
-False Positives (Predicted ALL, but was HEM): 6
-
-False Negatives (Predicted HEM, but was ALL): 0
-
-True Positives (Correctly predicted ALL): 1455
-
+[[ 435  243]
+ [  49 1406]]
 
 ![Model confusion_matrix Plot](confusion_matrix_heatmap.png)
 
