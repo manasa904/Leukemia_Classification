@@ -1,9 +1,8 @@
-# Leukemia_Classification
-Leukemia Classification using ResNet50 <br>
-Project Overview  <br>
+#Leukemia Classification using ResNet50 <br>
+#Project Overview  <br>
 This project develops an image classification model to detect Acute Lymphoblastic Leukemia (ALL) from microscopic blood smear images. It utilizes transfer learning with the ResNet50 convolutional neural network to classify images as either ALL (leukemia) or HEM (healthy).  <br>
 
-Key Features  <br>
+#Key Features  <br>
 Automated Image Preprocessing: Includes steps like CLAHE for contrast enhancement, Otsu's thresholding for segmentation, smart cropping to focus on cells, and resizing. <br>
 
 Transfer Learning: Leverages a pre-trained ResNet50 model (on ImageNet) as a powerful feature extractor. <br>
@@ -34,11 +33,11 @@ Classification Report: <br>
            1       0.85      0.97      0.91      1455
 
     accuracy                           0.86      2133
-   macro avg       0.88      0.80      0.83      2133
-weighted avg       0.87      0.86      0.86      2133
+   macro avg       0.88      0.80      0.83      2133 <br>
+weighted avg       0.87      0.86      0.86      2133 <br>
    
 Confusion Matrix: <br>
-[[ 435  243]
+[[ 435  243] <br>
  [  49 1406]]
 
 ![Model confusion_matrix Plot](confusion_matrix_heatmap.png)
