@@ -1,33 +1,33 @@
 # Leukemia_Classification
-Leukemia Classification using ResNet50
-Project Overview
-This project develops an image classification model to detect Acute Lymphoblastic Leukemia (ALL) from microscopic blood smear images. It utilizes transfer learning with the ResNet50 convolutional neural network to classify images as either ALL (leukemia) or HEM (healthy).
+Leukemia Classification using ResNet50 <br>
+Project Overview  <br>
+This project develops an image classification model to detect Acute Lymphoblastic Leukemia (ALL) from microscopic blood smear images. It utilizes transfer learning with the ResNet50 convolutional neural network to classify images as either ALL (leukemia) or HEM (healthy).  <br>
 
-Key Features
-Automated Image Preprocessing: Includes steps like CLAHE for contrast enhancement, Otsu's thresholding for segmentation, smart cropping to focus on cells, and resizing.
+Key Features  <br>
+Automated Image Preprocessing: Includes steps like CLAHE for contrast enhancement, Otsu's thresholding for segmentation, smart cropping to focus on cells, and resizing. <br>
 
-Transfer Learning: Leverages a pre-trained ResNet50 model (on ImageNet) as a powerful feature extractor.
+Transfer Learning: Leverages a pre-trained ResNet50 model (on ImageNet) as a powerful feature extractor. <br>
 
-Deep Learning Model: A Keras sequential model built on ResNet50 with custom classification layers and dropout for regularization.
+Deep Learning Model: A Keras sequential model built on ResNet50 with custom classification layers and dropout for regularization. <br>
 
-Optimized Training: Uses Adam optimizer, binary_crossentropy loss, Early Stopping, and Model Checkpointing.
+Optimized Training: Uses Adam optimizer, binary_crossentropy loss, Early Stopping, and Model Checkpointing. <br>
 
-Performance Evaluation: Provides test accuracy, classification report, and confusion matrix.
+Performance Evaluation: Provides test accuracy, classification report, and confusion matrix. <br>
 
-Training Visualization: Plots model accuracy and loss history.
+Training Visualization: Plots model accuracy and loss history. <br>
 
-Dataset
-The model is trained on the C-NMC Leukemia dataset, containing ALL and HEM blood smear images.
+Dataset <br>
+The model is trained on the C-NMC Leukemia dataset, containing ALL and HEM blood smear images. <br>
 
-Dataset Source: Kaggle - Leukemia Classification (C-NMC)
+Dataset Source: Kaggle - Leukemia Classification (C-NMC) <br>
 
-Results
-The model effectively classifies leukemia images, achieving a test accuracy of approximately 99.91%.
+Results <br>
+The model effectively classifies leukemia images, achieving a test accuracy of approximately 99.91%. <br>
 
-Test Loss: 0.0051
-Test Accuracy: 0.9991
+Test Loss: 0.0051 <br>
+Test Accuracy: 0.9991 <br>
 
-Classification Report:
+Classification Report: <br>
 
               precision    recall  f1-score   support
 
@@ -36,9 +36,9 @@ Classification Report:
 
     accuracy                           1.00      2133
    
-Confusion Matrix:
+Confusion Matrix: <br>
 
-True Negatives (Correctly predicted HEM): 672
+True Negatives (Correctly predicted HEM): 672 
 
 False Positives (Predicted ALL, but was HEM): 6
 
